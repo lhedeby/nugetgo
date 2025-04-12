@@ -57,7 +57,7 @@ func menu(projects []Project) ([]Project, error) {
 		case 'l', '\n':
 			if project == nil {
 				project = &projects[selection.Project]
-                selection.Pkg = 0
+				selection.Pkg = 0
 			} else if pkg == nil {
 				pkg = &project.Frameworks[0].TopLevelPackages[selection.Pkg]
 				if len(pkg.AllVersions) == 0 {
@@ -69,7 +69,7 @@ func menu(projects []Project) ([]Project, error) {
 				} else {
 					pkg.Versions = pkg.FilteredVersions
 				}
-                selection.Version = 0
+				selection.Version = 0
 			} else {
 				pkg.NewVersion = pkg.Versions[selection.Version].String()
 			}

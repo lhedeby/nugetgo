@@ -10,10 +10,10 @@ func main() {
 		fmt.Println(err)
 		return
 	}
-    updatedProjects, err := menu(projects)
+	updatedProjects, err := menu(projects)
 	if err != nil {
 		fmt.Println(err)
 		return
 	}
-    dotnetUpdateProject(updatedProjects)
+	dotnetUpdateProject(updatedProjects)
 }

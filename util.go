@@ -19,14 +19,14 @@ func filterContains[T fmt.Stringer](arr []T, s string) []T {
 			filtered = append(filtered, v)
 		}
 	}
-    return filtered
+	return filtered
 }
 
 func move(index *int, delta int, min int, max int) {
-    *index += delta
-    if *index > max {
-        *index = max
-    } else if *index < min {
-        *index = min
-    }
+	*index += delta
+	if *index > max {
+		*index = max
+	} else if *index < min {
+		*index = min
+	}
 }
